@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box
+
+  }
+  
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  .payroll-main{
+    height: 100%;
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+  
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  
+  .header {
+    padding: 15px 0;
+    background-color: #ffffff;
+    border: 1px solid green;
+  }
+  
+  .header-content header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 80%;
+    padding-left: 130px;
+  }
+  
+  .logo-content-img {
+    border: 0px solid #42515f;
+  }
+  
+  .emp-text {
+    font: normal normal bold 20px/20px Montserrat;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+    color: #82A70C; 
+    text-transform: capitalize;
+  }
+  
+  .emp-payroll {
+    color: #42515f;
+  }
+  
+  .form-content {
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  } 
+  
+  .form {
+    width: 72%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+    margin: auto;
+    
+  }
+  
+  .form-head {
+    font: normal normal bold 28px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    
+  }
+  
+  .row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+
+  }
+  
+  /* .label {
+    min-width: 140px;
+  } */
+  
+  label {
+    padding: 1px 5px 11px 1px;
+    display: inline-block;  
+  }
+  
+  .text {
+    height: auto;
+    font-size: 16px;
+    color: #43515f;
+    opacity: 1;
+    font-family: Roboto;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+
+  .row {
+    display: flex;
+    padding-left: 52px;
+  }
+  
+  .input {
+    height: 33px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    resize: vertical;
+    padding-right: 252px;
+    margin-left: 15px;
+  }
+  
+  .profile-radio-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+  }
+  
+  select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+    display: flex; 
+  }
+  
+  .buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    font-size: 18px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 88px;
+    padding: 6px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+    margin-right: 52px;
+  }
+  
+  /* .submitButton {
+    border: none;
+    border: 1px solid grey;
+    margin-right: 30px;
+  }
+  
+  .cancelButton {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 85px;
+  }
+  
+    .resetButton {
+        margin-right: 10px;
+    } */
+
+    .cancleButton{
+        background-color: #e0e0e2;
+        border-radius: 0.9mm;
+        width: 2.5cm;
+        height: 0.8cm;
+       }
+
+      .submitButton{
+        margin-left: 300px;
+        background-color: #e0e0e2;
+        border-radius: 0.9mm;
+        width: 2.5cm;
+        height: 0.8cm;
+        margin-right: 42px;
+      }
+
+      .resetButton{
+        
+        background-color: #e0e0e2;
+        border-radius: 0.9mm;
+        width: 2.5cm;
+        height: 0.8cm;
+        margin-left: 43px;
+      }
+  
+    error-output {
+        margin-left: 10px;
+        font-size: 15px;
+        font-style: italic;
+        color: rgb(231, 66, 66);
+    }
+  
+  @media only screen and (max-width:600px) {
+    .form {
+        margin-top: 10px;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between
+    }
+
+    .cancelButton {
+        margin-left: 0px;
+        
+    }
+
+    .form {
+        width: 85%;
+        padding: 44ox 20px;
+    display: flex;
+
+    }
+
+    .profile-lable {
+        margin-left: 0px;
+    display: flex;
+
+    }
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+  }
+  
+  a.button:hover {
+    background: grey;
+    color: white;
+  }
+  
+  .submitButton:hover {
+    background-color: #82A70C;
+    color: white;
+  }
+  
+  .resetButton:hover {
+    background: grey;
+    color: white;
+  }
+  
+  
